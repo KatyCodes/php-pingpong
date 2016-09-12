@@ -4,8 +4,8 @@
     require_once __DIR__."/../src/PingPongGen.php";
 
     session_start();
-    if (empty($_SESSION['collection'])) {
-        $_SESSION['collection'] = array();
+    if (empty($_SESSION['numbersArray'])) {
+        $_SESSION['numbersArray'] = array();
     }
 
     $app = new Silex\Application();
@@ -22,8 +22,13 @@
     });
 
   //loads basic php
-    $app->get("/test", function() use ($app) {
-
+    $app->post("/final", function() use ($app) {
+      //instantiate object
+      $newNumber = new PingPongGen;
+      //stores user input, runs listNumbers on it, runs pingfunction on that, stores as new variable
+      $newNumber2 = $newNumber->pingFunction($newNumber->listNumbers($_POST['userInput']));
+      $newNumber->save();
+      return $app['twig']->render("final.html.twig", array('this_number' => $newNumber2));
     });
 
     return $app;

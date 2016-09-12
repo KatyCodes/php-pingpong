@@ -2,6 +2,23 @@
 
   class PingPongGen
   {
+    private $input;
+
+    function getInput()
+    {
+      return $this->input;
+    }
+
+    function setInput()
+    {
+      $this->input = $input;
+    }
+
+    function save()
+        {
+          array_push($_SESSION['numbersArray'], $this);
+        }
+
     function listNumbers($input)
     {
       $result = array();
@@ -29,7 +46,7 @@
           $replacement = "pong";
         }
       }
-      return $listNumbers;
+      return implode(", ", $listNumbers);
     }
   }
 ?>
