@@ -22,6 +22,8 @@ _You must host this webpage locally_
 
 * _take number from user and return all previous numbers_
 * _return "ping" for every number equally divisible by 3_
+* _return "pong" for every number equally divisible by 5_
+* _return "ping-pong" for every number equally divisible by 15_
 
 ## Known Bugs
 

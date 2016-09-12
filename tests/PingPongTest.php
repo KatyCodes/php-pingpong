@@ -20,7 +20,7 @@
 
         $result = $test_PingPongGen->pingFunction($input);
 
-        $this->assertEquals([1,2,'ping',4,5], $result);
+        $this->assertEquals([1,2,'ping',4,"pong"], $result);
       }
 
 

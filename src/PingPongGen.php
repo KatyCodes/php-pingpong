@@ -20,8 +20,12 @@
         {
            $replacement = "ping";
         }
+        elseif (($replacement % 5) == 0)
+        {
+          $replacement = "pong";
+        }
       }
-    return $listNumbers;
+      return $listNumbers;
     }
   }
 ?>
