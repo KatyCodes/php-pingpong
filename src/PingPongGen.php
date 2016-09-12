@@ -16,7 +16,11 @@
     function pingFunction ($listNumbers)
     {
       foreach($listNumbers as &$replacement) {
-        if (($replacement % 3) == 0)
+        if (($replacement % 15) == 0)
+        {
+           $replacement = "ping-pong";
+        }
+        elseif (($replacement % 3) == 0)
         {
            $replacement = "ping";
         }
