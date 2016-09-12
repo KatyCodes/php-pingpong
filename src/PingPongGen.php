@@ -13,15 +13,15 @@
       return $result;
     }
 
-    function pingFunction ($input)
+    function pingFunction ($listNumbers)
     {
-      foreach($input as &$replacement) {
+      foreach($listNumbers as &$replacement) {
         if (($replacement % 3) == 0)
         {
            $replacement = "ping";
         }
       }
-    return $input;
+    return $listNumbers;
     }
   }
 ?>
