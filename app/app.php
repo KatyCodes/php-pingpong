@@ -23,7 +23,7 @@
 
   //loads basic php
     $app->get("/test", function() use ($app) {
-      return 'test variables here';
+
     });
 
     return $app;

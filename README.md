@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _PingPong PHP Edition_
 
 #### _{Brief description of application}, {Date of current version}_
 
-#### By _**Ryan Loos**_
+#### By _**Ryan Loos & Katy Henning**_
 
 ## Description
 
@@ -21,6 +21,7 @@ _You must host this webpage locally_
 ## Behavior Driven Development
 
 * _take number from user and return all previous numbers_
+* _return "ping" for every number equally divisible by 3_
 
 ## Known Bugs
 
@@ -41,4 +42,4 @@ SILEX 1.1_
 
 *This webpage is licensed under the GPL license.*
 
-Copyright (c) 2016 **_Ryan Loos_**
+Copyright (c) 2016 **_Ryan Loos & Katy Henning_**

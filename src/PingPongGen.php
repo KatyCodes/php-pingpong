@@ -12,11 +12,16 @@
       }
       return $result;
     }
-    // function makeTitleCase($input_title)
-    //    {
-    //        return ucfirst($input_title);
-    //    }
+
+    function pingFunction ($input)
+    {
+      foreach($input as &$replacement) {
+        if (($replacement % 3) == 0)
+        {
+           $replacement = "ping";
+        }
       }
-
-
+    return $input;
+    }
+  }
 ?>
